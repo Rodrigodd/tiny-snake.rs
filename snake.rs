@@ -325,6 +325,7 @@ fn quit() -> ! {
     exit(0);
 }
 
+#[inline(always)]
 fn win() -> ! {
     // set cursor visible (`\x1b[?25h`), disable alternative screen (`\xb1[1049l`).
     print("\x1b[?25h\x1b[?1049l\x1b[2J\x1b[H");
