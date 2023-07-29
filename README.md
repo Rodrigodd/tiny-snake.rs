@@ -35,7 +35,7 @@ less than 3KiB.
 There is still room for improvements, but the last change was so dramatic that I
 am now satisfied.
 
-## Building
+## Building and Running
 
 To build the game binary you only need `rustc` and make:
 
@@ -43,7 +43,14 @@ To build the game binary you only need `rustc` and make:
 $ make snake
 ```
 
-You can also build and run:
+This creates a binary called `snake` in the current folder, and you can run it
+with:
+
+```shell
+$ ./snake
+```
+
+You can also build and run in a single command:
 
 ```shell
 $ make run
@@ -59,3 +66,11 @@ The `Makefile` contains the following commands:
 - `objdump`: produce a clean up disassembly of snake.debug.
 - `fmt`: format `snake.rs`
 - `clean`: delete all generated files.
+
+## Acknowledgments
+
+- [Kpcyrd's blog post](https://vulns.xyz/2023/03/linux-executable-from-scratch-with-x86_64-unknown-none-rust/)
+  about writing a Hello World program using only raw syscalls.
+- [Graham King's blog post](https://darkcoding.net/software/a-very-small-rust-binary-indeed/)
+  that lists many techniques for reducing the size of a Rust binary, although I
+  still didn't use all of them.
