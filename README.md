@@ -74,3 +74,8 @@ The `Makefile` contains the following commands:
 - [Graham King's blog post](https://darkcoding.net/software/a-very-small-rust-binary-indeed/)
   that lists many techniques for reducing the size of a Rust binary, although I
   still didn't use all of them.
+
+## License
+
+This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file
+for details.
