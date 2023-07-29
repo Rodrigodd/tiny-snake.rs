@@ -56,5 +56,6 @@ The `Makefile` contains the following commands:
 - `size`: print informations about the size of each symbol and section, and total size of the binary.
 - `snake.asm`: emmit a clean up version of the assembly emmited by rustc.
 - `gdb`: run `snake.debug` on `rust-gdb`.
+- `objdump`: produce a clean up disassembly of snake.debug.
 - `fmt`: format `snake.rs`
 - `clean`: delete all generated files.

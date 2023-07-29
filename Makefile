@@ -39,6 +39,9 @@ snake.asm: snake.rs
 	# emit asm with intel syntax, and demangles with rustfilt
 	rustc -o snake.asm snake.rs $(ARGS) --emit asm -C llvm-args=-x86-asm-syntax=intel && cat snake.asm | sed '/^\s*\./d' | rustfilt | sponge snake.asm
 
+objdump:
+	objdump -M intel -d snake.debug | rustfilt
+
 fmt:
 	rustfmt snake.rs --edition=2021
 
