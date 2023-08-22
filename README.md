@@ -2,7 +2,7 @@
 
 A very tiny terminal snake game, purely implemented in Rust.
 
-![snake](https://github.com/Rodrigodd/tiny-snake.rs/assets/51273772/1f7c579a-400d-46f5-bf5a-c05f00ae230c)
+![snake-480](https://github.com/Rodrigodd/tiny-snake.rs/assets/51273772/948b68ef-b75f-46c2-b500-e4ffc771b4ce)
 
 ## Features
 
